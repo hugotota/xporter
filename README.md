@@ -5,7 +5,7 @@ Example
  - Annotate your bean like this
 
 ```java
-  @ExcelReport(name = "excel")
+	@ExcelReport(name = "excel")
 	public static class Excel {
     @ExcelColumn(label = "Data") 
     @ExcelStyle(border = BorderFill.ALL, pattern = "mmm/dd/yyyy", cellType = DATE)
@@ -43,3 +43,7 @@ Example
 		workbook.write(new FileOutputStream(workbook.xlsx().filename()));
   }
 ```
+
+ - And the framework will create something like this pic
+
+![ScreenShot](https://raw.github.com/hugotota/xporter/master/excel.jpeg)
