@@ -29,7 +29,7 @@ Example
  - Write the excel file like this
 
 ```java
-	public void export() throws Exception {
+	public void export(List<Excel> data) throws Exception {
 		// add your annotated classes here
 		Assembly assembly = new ExcelAssembly()
 			.addClasses(Excel.class)
